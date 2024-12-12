@@ -1,7 +1,7 @@
 <%= form_with(model: image, local: true) do |form| %>
   <% if image.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(image.errors.count, "error") %> prohibited this image from being saved:</h2>
+      <h2><%= pluralize(image.errors.count, "error") %> <%= t('activerecord.errors.messages.prohibited') %></h2>
       <ul>
         <% image.errors.full_messages.each do |message| %>
           <li><%= message %></li>
@@ -11,21 +11,22 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :tittle %>
+    <%= form.label :tittle, t('images.form.tittle') %>
     <%= form.text_field :tittle %>
   </div>
 
   <div class="field">
-    <%= form.label :description %>
+    <%= form.label :description, t('images.form.description') %>
     <%= form.text_area :description %>
   </div>
 
   <div class="field">
-    <%= form.label :image_file %>
-    <%= form.file_field :image %>
+    <%= form.label :file, t('images.form.file') %>
+    <%= form.file_field :file %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit t('images.form.submit') %>
+    <%= link_to t('images.form.cancel'), images_path %>
   </div>
 <% end %>

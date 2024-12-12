@@ -1,0 +1,18 @@
+es:
+  hello: "Hola"
+  images:
+    index:
+      tittle: "Galería de Imágenes"
+      new_image: "Nueva Imagen"
+    show:
+      tittle: "Título"
+      description: "Descripción"
+      file: "Archivo"
+      edit: "Editar"
+      back: "Volver"
+    form:
+      tittle: "Título"
+      description: "Descripción"
+      file: "Subir Imagen"
+      submit: "Guardar"
+      cancel: "Cancelar"

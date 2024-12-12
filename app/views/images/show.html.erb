@@ -1,16 +1,15 @@
-<p style="color: green"><%= notice %></p>
+<p>
+  <strong><%= t('images.show.tittle') %>:</strong>
+  <%= @image.tittle %>
+</p>
+<p>
+  <strong><%= t('images.show.description') %>:</strong>
+  <%= @image.description %>
+</p>
 
-<%= render @image %>
-
-<% if @image.image.attached? %>
-  <%= image_tag url_for(@image.image), alt: "Image file" %>
-<% else %>
-  <p>No image found</p>
+<% if @image.file.attached? %>
+  <%= image_tag @image.file.service_url %>
 <% end %>
 
-<div>
-  <%= link_to "Edit this image", edit_image_path(@image) %> |
-  <%= link_to "Back to images", images_path %>
-
-  <%= button_to "Destroy this image", @image, method: :delete %>
-</div>
+<%= link_to t('images.show.edit'), edit_image_path(@image) %> |
+<%= link_to t('images.show.back'), images_path %>

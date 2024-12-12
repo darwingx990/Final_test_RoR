@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "Form Gallery" %></title>
+    <title><%= content_for(:tittle) || "Form Gallery" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -23,6 +23,10 @@
   </head>
 
   <body>
-    <%= yield %>
+<%= link_to "English", url_for(locale: 'en') %> |
+<%= link_to "Español", url_for(locale: 'es') %>
+
+<%= yield %>
+
   </body>
 </html>

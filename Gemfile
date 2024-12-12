@@ -63,8 +63,8 @@ group :test do
 end
 
 # Enviroment Variables
-gem 'dotenv-rails'
+gem "dotenv-rails"
 
-# Cloudinary - Active Storage. Upload files to the project
+  # Cloudinary - Active Storage. Upload files to the project
   # assets img cloud
-  gem 'cloudinary', '~> 2.2'
+  gem "cloudinary", "~> 2.2"

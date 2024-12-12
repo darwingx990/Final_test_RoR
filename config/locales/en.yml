@@ -28,4 +28,20 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  hello: "Hello"
+  images:
+    index:
+      tittle: "Image Gallery"
+      new_image: "New Image"
+    show:
+      tittle: "Title"
+      description: "Description"
+      file: "File"
+      edit: "Edit"
+      back: "Back"
+    form:
+      tittle: "Title"
+      description: "Description"
+      file: "Upload Image"
+      submit: "Save"
+      cancel: "Cancel"
