@@ -2,6 +2,12 @@
 
 <%= render @image %>
 
+<% if @image.image.attached? %>
+  <%= image_tag url_for(@image.image), alt: "Image file" %>
+<% else %>
+  <p>No image found</p>
+<% end %>
+
 <div>
   <%= link_to "Edit this image", edit_image_path(@image) %> |
   <%= link_to "Back to images", images_path %>

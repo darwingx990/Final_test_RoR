@@ -62,4 +62,9 @@ group :test do
   gem "selenium-webdriver"
 end
 
+# Enviroment Variables
 gem 'dotenv-rails'
+
+# Cloudinary - Active Storage. Upload files to the project
+  # assets img cloud
+  gem 'cloudinary', '~> 2.2'
