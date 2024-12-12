@@ -1,3 +1,10 @@
+<%= form_with url: request.path, method: :get, local: true do |f| %>
+  <%= f.select :locale,
+    [["us English", "en"], ["🇨🇴 Español", "es"]],
+    { selected: I18n.locale },
+    { onchange: "this.form.submit()", class: "bg-gray-100 border rounded p-2" } %>
+<% end %>
+
 <p>
   <strong><%= t('images.show.tittle') %>:</strong>
   <%= @image.tittle %>
@@ -7,8 +14,8 @@
   <%= @image.description %>
 </p>
 
-<% if @image.file.attached? %>
-  <%= image_tag @image.file.service_url %>
+<% if @image.image.attached? %>
+  <%= image_tag url_for(@image.image) %>
 <% end %>
 
 <%= link_to t('images.show.edit'), edit_image_path(@image) %> |

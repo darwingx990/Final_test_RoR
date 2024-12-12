@@ -7,12 +7,18 @@ es:
     show:
       tittle: "Título"
       description: "Descripción"
-      file: "Archivo"
+      image: "Archivo"
       edit: "Editar"
       back: "Volver"
     form:
       tittle: "Título"
       description: "Descripción"
-      file: "Subir Imagen"
+      image: "Subir Imagen"
       submit: "Guardar"
       cancel: "Cancelar"
+
+    edit:
+      title: "Editar formulario"
+
+    new:
+      title: "Nuevo Formulario"

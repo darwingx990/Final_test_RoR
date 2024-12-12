@@ -42,6 +42,12 @@ en:
     form:
       tittle: "Title"
       description: "Description"
-      file: "Upload Image"
+      image: "Upload Image"
       submit: "Save"
       cancel: "Cancel"
+
+    edit:
+      title: "Editing form"
+
+    new:
+      title: "New Form"
